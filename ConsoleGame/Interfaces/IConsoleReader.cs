@@ -8,7 +8,7 @@ using ConsoleGame.Interfaces;
 
 namespace ConsoleGame
 {
-    public interface IConsoleReader : IDisposable
+    public interface IConsoleReader
     {
         string ParseText(string input);
         void AddKeyword(IKeyword keyword);

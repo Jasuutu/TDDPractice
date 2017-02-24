@@ -60,7 +60,7 @@ namespace ConsoleGameTests
         [TearDown]
         public void TearDown()
         {
-            this.reader.Dispose();
+            this.reader = null;
         }
     }
 }

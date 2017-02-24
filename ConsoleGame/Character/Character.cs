@@ -6,15 +6,17 @@ namespace ConsoleGame
 {
     public class Character : ICharacter
     {
-        private List<IStat> _stats;
+        private readonly List<IStat> _stats;
         private string _name;
+
+        public Character()
+        {
+            //this._stats = stats;
+            //this._name = name;
+        }
 
         public void AddStatToCharacter(IStat stat)
         {
-            if (this._stats == null)
-            {
-                this._stats = new List<IStat>();
-            }
             this._stats.Add(stat);
         }
 

@@ -55,10 +55,5 @@ namespace ConsoleGame
             return resultsList;
 
         }
-
-        public void Dispose()
-        {
-            this.Keywords.Clear();
-        }
     }
 }

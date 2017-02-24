@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleGame.Interfaces
 {
-    public interface IKeyword : IDisposable
+    public interface IKeyword
     {
         string GetName();
     }

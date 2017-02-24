@@ -67,6 +67,7 @@
     <Compile Include="ConsoleReaderTests.cs" />
     <Compile Include="KeywordTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StatManagerTests.cs" />
     <Compile Include="StatTests.cs" />
   </ItemGroup>
   <ItemGroup>

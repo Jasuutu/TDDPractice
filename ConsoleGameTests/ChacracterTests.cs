@@ -15,7 +15,6 @@ namespace ConsoleGameTests
         private const string Name = "Test";
         private const string StatName = "TestStat";
         private const int StatValue = 100;
-        private const int Mp = 100;
 
         #endregion
         #region Properties
@@ -28,7 +27,6 @@ namespace ConsoleGameTests
         public void SetupTests()
         {
             this._character = new Character();
-
         }
         [Test]
         public void CharacterConstructorTest()
