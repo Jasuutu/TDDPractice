@@ -15,5 +15,10 @@ namespace ConsoleGame
         {
             this._stats.Add(stat);
         }
+
+        public List<IStat> ListStats()
+        {
+            return this._stats;
+        }
     }
 }

@@ -6,5 +6,7 @@ namespace ConsoleGame.Interfaces
     public interface IStatManager
     {
         void AddStat(IStat stat);
+
+        List<IStat> ListStats();
     }
 }

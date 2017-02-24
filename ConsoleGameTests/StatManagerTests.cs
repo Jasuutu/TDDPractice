@@ -10,31 +10,47 @@ namespace ConsoleGameTests
     [TestFixture]
     public class StatManagerTests
     {
-        private StatManager statManager;
+
+        #region Constants
+
+        private const string TestStatName = "Test";
+        private const int TestStatValue = 10;
+        #endregion
+
+        private StatManager _statManager;
         [SetUp]
         public void SetUpTests()
         {
-            this.statManager = new StatManager();
+            this._statManager = new StatManager();
         }
         [Test]
         public void StatManagerConstructorTest()
         {
             
-            Assert.IsNotNull(statManager);
+            Assert.IsNotNull(this._statManager);
         }
 
         [Test]
         public void AddStatTest()
         {
-            var testStat = new Stat("Test", 10);
-            this.statManager.AddStat(testStat);
+            var testStat = new Stat(TestStatName, TestStatValue);
+            this._statManager.AddStat(testStat);
+
+        }
+
+        [Test]
+        public void ListStatsTest()
+        {
+            var testStat = new Stat(TestStatName, TestStatValue);
+            this._statManager.AddStat(testStat);
+            Assert.IsNotNull(this._statManager.ListStats());
 
         }
 
         [TearDown]
         public void TestCleanup()
         {
-            this.statManager = null;
+            this._statManager = null;
         }
     }
 }
