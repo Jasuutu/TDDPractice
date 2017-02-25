@@ -24,7 +24,7 @@ namespace ConsoleGameTests
         [OneTimeSetUp]
         public void SetupTests()
         {
-            this._stat = new Stat(Name, Value);
+            this._stat = new Stat(Name);
         }
         [Test]
         public void StatConstrutorTest()
@@ -40,12 +40,6 @@ namespace ConsoleGameTests
         }
 
         [Test]
-        public void SetValueTest()
-        {
-            this._stat.SetValue(Value);
-        }
-
-        [Test]
         public void GetNameTest()
         {
 
@@ -56,6 +50,14 @@ namespace ConsoleGameTests
         public void GetValueTest()
         {
             Assert.AreEqual(this._stat.GetValue(), Value);
+        }
+
+        [Test]
+        public void ChangeStatValueTest()
+        {
+            this._stat.ChangeStatValue(Value);
+            Assert.NotZero(this._stat.GetValue());
+
         }
     }
 }

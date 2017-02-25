@@ -10,20 +10,15 @@ namespace ConsoleGame
         private int _value;
         #endregion
 
-        public Stat(string name, int value)
+        public Stat(string name)
         {
             this._name = name;
-            this._value = value;
+            this._value = 0;
         }
 
         public void SetName(string name)
         {
             this._name = name;
-        }
-
-        public void SetValue(int value)
-        {
-            this._value = value;
         }
 
         public string GetName()
@@ -34,6 +29,11 @@ namespace ConsoleGame
         public int GetValue()
         {
             return this._value;
+        }
+
+        public void ChangeStatValue(int value)
+        {
+            this._value += value;
         }
     }
 }

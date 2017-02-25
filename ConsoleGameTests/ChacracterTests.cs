@@ -43,9 +43,9 @@ namespace ConsoleGameTests
             //    .Setup(x => x.SetName(It.IsAny<string>()) & x.SetValue(It.IsAny<int>()));
             
                 
-            var Hp = new Stat(StatName, StatValue);
-            Hp.SetName(StatName);
-            this._character.AddStatToCharacter(Hp);
+            var hp = new Stat(StatName);
+            hp.SetName(StatName);
+            this._character.AddStatToCharacter(hp);
         }
         [Test]
         public void NameCharacterTest()

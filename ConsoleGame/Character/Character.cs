@@ -11,8 +11,8 @@ namespace ConsoleGame
 
         public Character()
         {
-            //this._stats = stats;
-            //this._name = name;
+            this._stats = new List<IStat>();
+            this._name = string.Empty;
         }
 
         public void AddStatToCharacter(IStat stat)

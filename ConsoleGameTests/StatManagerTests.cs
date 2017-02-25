@@ -33,7 +33,7 @@ namespace ConsoleGameTests
         [Test]
         public void AddStatTest()
         {
-            var testStat = new Stat(TestStatName, TestStatValue);
+            var testStat = new Stat(TestStatName);
             this._statManager.AddStat(testStat);
 
         }
@@ -41,7 +41,7 @@ namespace ConsoleGameTests
         [Test]
         public void ListStatsTest()
         {
-            var testStat = new Stat(TestStatName, TestStatValue);
+            var testStat = new Stat(TestStatName);
             this._statManager.AddStat(testStat);
             Assert.IsNotNull(this._statManager.ListStats());
 

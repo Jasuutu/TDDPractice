@@ -4,7 +4,7 @@
     {
         void SetName(string name);
         string GetName();
-        void SetValue(int value);
+        void ChangeStatValue(int value);
         int GetValue();
     }
 }
