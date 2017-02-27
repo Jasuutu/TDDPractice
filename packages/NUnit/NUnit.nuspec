@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>NUnit</id>
-    <version>3.6.0</version>
+    <version>3.6.1</version>
     <title>NUnit</title>
     <authors>Charlie Poole</authors>
     <owners>Charlie Poole</owners>
