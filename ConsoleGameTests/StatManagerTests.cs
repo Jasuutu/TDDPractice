@@ -1,22 +1,20 @@
 ﻿using System.Net.NetworkInformation;
 using ConsoleGame;
 using ConsoleGame.Interfaces;
+using ConsoleGameTests.Moqs;
 using NUnit.Framework;
 using NUnit.Framework.Internal;
 
 namespace ConsoleGameTests
 {
+
+    // TODO: Concidering taking this class out since I think it can be replaced by just a List<IStas>.
+    // Holding off on contineing this untill a later time
+
     [Category("StatManagerTests")]
     [TestFixture]
     public class StatManagerTests
     {
-
-        #region Constants
-
-        private const string TestStatName = "Test";
-        private const int TestStatValue = 10;
-        #endregion
-
         private StatManager _statManager;
         [SetUp]
         public void SetUpTests()
@@ -33,16 +31,16 @@ namespace ConsoleGameTests
         [Test]
         public void AddStatTest()
         {
-            var testStat = new Stat(TestStatName);
-            this._statManager.AddStat(testStat);
+            IStat stat = new StatMock().Object;
+            this._statManager.AddStat(stat);
 
         }
 
         [Test]
         public void ListStatsTest()
         {
-            var testStat = new Stat(TestStatName);
-            this._statManager.AddStat(testStat);
+            IStat stat = new StatMock().Object;
+            this._statManager.AddStat(stat);
             Assert.IsNotNull(this._statManager.ListStats());
 
         }

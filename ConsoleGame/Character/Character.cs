@@ -24,5 +24,10 @@ namespace ConsoleGame
         {
             this._name = name;
         }
+
+        public IStat GetStatBasedOnName(string name)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

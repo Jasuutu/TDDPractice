@@ -1,5 +1,7 @@
-﻿using ConsoleGame;
+﻿using System.Runtime.InteropServices;
+using ConsoleGame;
 using ConsoleGame.Interfaces;
+using ConsoleGameTests.Moqs;
 using Moq;
 using NUnit.Framework;
 
@@ -38,14 +40,8 @@ namespace ConsoleGameTests
         [Test]
         public void AddStatToCharcterTest()
         {
-            var moqStat = new Mock<IStat>(MockBehavior.Strict);
-            //moqStat
-            //    .Setup(x => x.SetName(It.IsAny<string>()) & x.SetValue(It.IsAny<int>()));
-            
-                
-            var hp = new Stat(StatName);
-            hp.SetName(StatName);
-            this._character.AddStatToCharacter(hp);
+            IStat stat = new StatMock().Object;
+            this._character.AddStatToCharacter(stat);
         }
         [Test]
         public void NameCharacterTest()
@@ -56,7 +52,11 @@ namespace ConsoleGameTests
         [Test]
         public void GetStat()
         {
-            
+            IStat stat = new StatMock().Object;
+            this._character.AddStatToCharacter(stat);
+
+            // TODO: Needs to be finished
+            // Assert.IsNotNull(_character.GetStatBasedOnName(stat.GetName()));
         }
     }
 }

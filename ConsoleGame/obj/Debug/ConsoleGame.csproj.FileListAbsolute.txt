@@ -7,3 +7,9 @@ C:\Users\jschultz\Documents\Visual Studio 2015\Projects\ConsoleGame\ConsoleGame\
 C:\Users\jschultz\Documents\Visual Studio 2015\Projects\ConsoleGame\ConsoleGame\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\Users\jschultz\Documents\Visual Studio 2015\Projects\ConsoleGame\ConsoleGame\bin\Debug\Microsoft.Practices.ServiceLocation.xml
 C:\Users\jschultz\Documents\Visual Studio 2015\Projects\ConsoleGame\ConsoleGame\obj\Debug\ConsoleGame.csprojResolveAssemblyReference.cache
+C:\Users\cloud_000\Documents\TDDPractice\ConsoleGame\bin\Debug\ConsoleGame.exe.config
+C:\Users\cloud_000\Documents\TDDPractice\ConsoleGame\bin\Debug\ConsoleGame.exe
+C:\Users\cloud_000\Documents\TDDPractice\ConsoleGame\bin\Debug\ConsoleGame.pdb
+C:\Users\cloud_000\Documents\TDDPractice\ConsoleGame\obj\Debug\ConsoleGame.exe
+C:\Users\cloud_000\Documents\TDDPractice\ConsoleGame\obj\Debug\ConsoleGame.pdb
+C:\Users\cloud_000\Documents\TDDPractice\ConsoleGame\obj\Debug\ConsoleGame.csprojResolveAssemblyReference.cache
